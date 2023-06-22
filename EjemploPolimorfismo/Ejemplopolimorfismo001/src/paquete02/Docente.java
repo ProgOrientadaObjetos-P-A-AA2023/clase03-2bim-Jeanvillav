@@ -20,8 +20,11 @@ public abstract class Docente {
     public String obtenerDocente(){
         return nombre;
     }
-    
+    /*
     public abstract void obtenerSueldo(double d){
         sueldo = d;
-    }
+    }*/
+    public abstract void obtenerSueldo(double d);
+        
+    
 }

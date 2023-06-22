@@ -33,7 +33,7 @@ public class EjecutaEstudiante {
             // el tipo de estudiante que se desea ingresar
             System.out.println("Tipo de Estudiante a ingresar\n"
                     + "Ingrese (1) para Estudiante Presencial"
-                    + "Ingrese (2) para Estudiante Distancia");
+                    + "\nIngrese (2) para Estudiante Distancia");
             // se captura el valor ingresado por el usuario en 
             // la variable tipoEstudiante
             tipoEstudiante = entrada.nextInt();

@@ -21,17 +21,17 @@ public class EjecutaEstudiante {
         int tipoEstudiante;
         String continuar;
         int contador;
-        Estudiante [] estudiantes = new Estudiante[10];
+        Estudiante [] estudiantes = new Estudiante[4];
 
         // Incio ciclo repetitivo que permite generar 10 objetos de tipo
         // EstudiantePresencial y EstudianteDistancia 
         contador = 0;
-        while(contador<10){
+        while(contador<4){
             // Se imprime mensaje en pantalla para solicitar
             // el tipo de estudiante que se desea ingresar
             System.out.println("Tipo de Estudiante a ingresar\n"
                     + "Ingrese (1) para Estudiante Presencial"
-                    + "Ingrese (2) para Estudiante Distancia");
+                    + "\nIngrese (2) para Estudiante Distancia");
             // se captura el valor ingresado por el usuario en 
             // la variable tipoEstudiante
             tipoEstudiante = entrada.nextInt();
@@ -113,7 +113,7 @@ public class EjecutaEstudiante {
         // características propias de cada objeto.
         // 2. Presentar en pantalla los valores que se necesite.
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 4; i++) {
             // 1.  
             estudiantes[i].calcularMatricula();
             // en el punto 1, estudiantes[i] representa un objeto de tipo 

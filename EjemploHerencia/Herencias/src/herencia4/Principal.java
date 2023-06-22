@@ -29,22 +29,24 @@ public class Principal {
         listaDocentes.add(doc2);
         
         ArrayList<Estudiante> listaEstudiantes = new ArrayList<>();
-        // agregar elementos
+        listaEstudiantes.add(est1);
+        listaEstudiantes.add(est2);
         
         
         ArrayList<Policia> listaPolicias = new ArrayList<>();
-        // agregar elementos
+        listaPolicias.add(pol1);
+        listaPolicias.add(pol2);
         
         
-        ReporteDocente rd = new ReporteDocente("0001Doc");
+        ReporteDocente rd = new ReporteDocente("0001Doc",listaDocentes);
+        rd.calcularPromedioSueldos();
+        //ReporteEstudiante re = new ReporteEstudiante("0001Est");
         
-        ReporteEstudiante re = new ReporteEstudiante("0001Est");
-        
-        ReportePolicia rp = new ReportePolicia("0001Pol");
+        //ReportePolicia rp = new ReportePolicia("0001Pol");
         
         System.out.println(rd);
-        System.out.println(re);
-        System.out.println(rp);
+       // System.out.println(re);
+        //System.out.println(rp);
         
     }
 }
